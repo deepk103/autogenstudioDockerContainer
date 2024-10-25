@@ -13,3 +13,4 @@ jobs:
           docker login --username deepk103 --password ${{ secrets.GH_PAT }} ghcr.io
           docker build -f Dockerfile.base . -t ghcr.io/deepk103/autogenstudio-ghcr:latest
           docker push ghcr.io/deepk103/autogenstudio-ghcr:latest
+          docker run ghcr.io/deepk103/autogenstudio-ghcr:latest
